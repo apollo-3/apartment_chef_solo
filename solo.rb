@@ -1,7 +1,7 @@
-cookbook_path ['/root/chef-repo/cookbooks']
-data_bag_path '/root/chef-repo/data_bags'
+cookbook_path ['/root/chef-repo/apartment_chef_solo/cookbooks']
+data_bag_path '/root/chef-repo/apartment_chef_solo/data_bags'
 environment 'production'
-environment_path '/root/chef-repo/environments'
-file_cache_path '/root/chef-repo/cache'
+environment_path '/root/chef-repo/apartment_chef_solo/environments'
+file_cache_path '/root/chef-repo/aaprtment_chef_solo/cache'
 node_name 'estate-hunt.com'
-role_path '/root/chef-repo/roles'
+role_path '/root/chef-repo/apartment_chef_solo/roles'
