@@ -1,4 +1,5 @@
 cd /root/chef-repo/apartment_chef_solo
+rm -rf cookbooks roles environments > /dev/null 2>&1
 git clone https://github.com/apollo-3/apartment_vagrant.git
 mv apartment_vagrant/cookbooks ./
 mv apartment_vagrant/roles ./
