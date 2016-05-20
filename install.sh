@@ -5,6 +5,6 @@ mv apartment_vagrant/cookbooks ./
 mv apartment_vagrant/roles ./
 mv apartment_vagrant/environments ./
 rm -rf apartment_vagrant
-curl -L https://www.opscode.com/chef/install.sh | bash
+[ `chef-solo -v | grep -c 'not found'` -ne 0 ] && curl -L https://www.opscode.com/chef/install.sh | bash
 cd /root/chef-repo/apartment_chef_solo
 chef-solo -c solo.rb -j run_list.json
